@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/web3modal@1.9.6/dist/index.js"></script>
     <script src="blockchain.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/web3modal@1.9.6/styles.css"
+    />
   </head>
   <body>
     <header>
@@ -18,7 +23,15 @@
           <div class="menu">
             <ul>
               <li>
+                <!--
                 <a href="#" onclick="exposeAccount(); return false;">Connect</a>
+                -->
+                <button id="connect-wallet-button">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/32px-MetaMask_Fox.svg.png"
+                  />
+                  <span style="padding-bottom: 8px"> Connect Wallet </span>
+                </button>
               </li>
             </ul>
           </div>

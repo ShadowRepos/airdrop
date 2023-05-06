@@ -124,3 +124,20 @@ main {
 
 .aidrop-text {
 }
+#connect-wallet-button {
+  display: flex;
+  align-items: flex-start;
+  height: 32px;
+}
+
+#connect-wallet-button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+#connect-wallet-button span {
+  padding-top: 8px;
+  padding-right: 4px;
+}

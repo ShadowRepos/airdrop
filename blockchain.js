@@ -52,6 +52,22 @@ const land_env = {
   },
 };
 
+const web3Modal = new Web3Modal.default({
+  network: "mainnet", // 接続するネットワークの指定
+  cacheProvider: true, // プロバイダーをキャッシュするかどうかの指定
+});
+const connectWalletButton = document.getElementById("connect-wallet-button");
+
+connectWalletButton.addEventListener("click", async () => {
+  // ウォレットのプロバイダーを取得する
+  const provider = await web3Modal.connect();
+
+  // Web3.jsのインスタンスを作成する
+  const web3 = new Web3(provider);
+
+  // 以降、web3を使用してDAppとブロックチェーンとのやり取りを行う
+});
+
 const erc20_abi = [
   {
     inputs: [
