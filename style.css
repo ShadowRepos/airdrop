@@ -112,31 +112,26 @@ main {
   border-radius: 10px;
 }
 
-.button {
-  font-size: 32px;
-}
-
 .airdrop {
   text-align: center;
   font-size: 32px;
   padding: 8px;
 }
-
-.aidrop-text {
-}
-#connect-wallet-button {
+button {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   height: 32px;
+  padding: 0 16px;
+  border: none;
+  background-color: #eee;
 }
 
-#connect-wallet-button img {
+button img {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  margin-top: 4px;
 }
 
-#connect-wallet-button span {
-  padding-right: 4px;
+button span {
+  font-size: 14px;
 }
